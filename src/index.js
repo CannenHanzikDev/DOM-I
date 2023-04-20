@@ -82,3 +82,10 @@ psBottom[2].textContent = siteContent['main-content']['vision-content']
 const ctaContent = document.querySelector('section.cta')
 ctaContent.children[0].children[0].textContent = siteContent.cta['h1']
 ctaContent.children[0].children[1].textContent = siteContent.cta['button']
+
+// nav
+const navLinks = document.querySelectorAll('header nav a')
+const navTexts = Object.values(siteContent.nav)
+navLinks.forEach((link, idx) => {
+  link.textContent = navTexts[idx]
+})
