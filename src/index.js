@@ -77,3 +77,8 @@ h4sBottom[2].textContent = siteContent['main-content']['vision-h4']
 psBottom[0].textContent = siteContent['main-content']['services-content']
 psBottom[1].textContent = siteContent['main-content']['product-content']
 psBottom[2].textContent = siteContent['main-content']['vision-content']
+
+// CTA
+const ctaContent = document.querySelector('section.cta')
+ctaContent.children[0].children[0].textContent = siteContent.cta['h1']
+ctaContent.children[0].children[1].textContent = siteContent.cta['button']
